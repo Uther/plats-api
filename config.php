@@ -1,9 +1,9 @@
 <?php
 set_time_limit(0);
-$db['db_name'] = '1111';
-$db['db_user'] = 'root';
-$db['db_pwd'] = 'gxghuang';
-$db['db_host'] = '192.168.8.251';
+$db['db_name'] = 'xxxx';
+$db['db_user'] = 'xxxx';
+$db['db_pwd'] = 'xxxx';
+$db['db_host'] = 'xxxxx';
 
 /*$db['db_name'] = 'gxggw';
 $db['db_user'] = 'usr0799k4k6';
