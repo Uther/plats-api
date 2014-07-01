@@ -1,0 +1,49 @@
+<?php
+/**
+ * TOP API: taobao.weitao.feed.get request
+ * 
+ * @author auto create
+ * @since 1.0, 2013-12-12 00:00:00
+ */
+class WeitaoFeedGetRequest
+{
+	/** 
+	 * feed的Id
+	 **/
+	private $feedId;
+	
+	private $apiParas = array();
+	
+	public function setFeedId($feedId)
+	{
+		$this->feedId = $feedId;
+		$this->apiParas["feed_id"] = $feedId;
+	}
+
+	public function getFeedId()
+	{
+		return $this->feedId;
+	}
+
+	public function getApiMethodName()
+	{
+		return "taobao.weitao.feed.get";
+	}
+	
+	public function getApiParas()
+	{
+		return $this->apiParas;
+	}
+	
+	public function check()
+	{
+		
+		RequestCheckUtil::checkNotNull($this->feedId,"feedId");
+		RequestCheckUtil::checkMinValue($this->feedId,1,"feedId");
+	}
+	
+	public function putOtherTextParam($key, $value) {
+		$this->apiParas[$key] = $value;
+		$this->$key = $value;
+	}
+}
