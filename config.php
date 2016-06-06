@@ -5,10 +5,6 @@ $db['db_user'] = 'xxxx';
 $db['db_pwd'] = 'xxxx';
 $db['db_host'] = 'xxxxx';
 
-/*$db['db_name'] = 'gxggw';
-$db['db_user'] = 'usr0799k4k6';
-$db['db_pwd'] = 'bsgxg2013_';
-$db['db_host'] = 'hzn01.rds.aliyuncs.com';*/
 
 $con = mysql_connect($db['db_host'],$db['db_user'],$db['db_pwd']);
 mysql_select_db($db['db_name'],$con);
