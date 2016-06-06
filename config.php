@@ -4,7 +4,7 @@ $db['db_name'] = 'xxxx';
 $db['db_user'] = 'xxxx';
 $db['db_pwd'] = 'xxxx';
 $db['db_host'] = 'xxxxx';
-
+$serverurl = "http://xxxxxxxxx";
 
 $con = mysql_connect($db['db_host'],$db['db_user'],$db['db_pwd']);
 mysql_select_db($db['db_name'],$con);
@@ -35,6 +35,6 @@ define("UIN",$api[0]);
 define("APPKEY",$api[1]);
 define("SECRETKEY",$api[2]);
 define("SESSIONKEY",$api[3]);
-define("SERVER_URL", "http://115.238.188.14");
+define("SERVER_URL", $serverurl);
 
 session_start();
